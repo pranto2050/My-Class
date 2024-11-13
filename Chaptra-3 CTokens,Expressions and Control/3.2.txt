@@ -1,0 +1,13 @@
+
+
+
+
+Tokens
+
+
+1. Keyword
+2. Identifiers
+3. String
+4. Constants
+5. Operator
+6. Special Characters/Symble

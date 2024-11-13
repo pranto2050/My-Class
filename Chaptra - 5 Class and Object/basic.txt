@@ -1,0 +1,23 @@
+Note
+Specifying a Class
+
+Class class_name{
+    privat:
+    // class members;
+    public:
+    // class members;   
+
+};
+
+---------  A simple Class Example. --------
+
+class item{
+    int number;
+    float cost;
+    
+    public:
+    void set_number(int n){};
+    void set_cost(float c){};
+    void display(){};
+}
+
