@@ -1,4 +1,6 @@
 
+
+// Pointer as function argument
 #include <iostream>
 using namespace std;
 
