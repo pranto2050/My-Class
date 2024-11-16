@@ -18,9 +18,9 @@ class students{
 
 class student{
     public:
-    void display(students dtl){
-        cout << dtl.id << endl;
-        cout << dtl.roll << endl;
+    void display(students single_student){
+        cout << single_student.id << endl;
+        cout << single_student.roll << endl;
     };
 };
 int main() {
