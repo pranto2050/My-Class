@@ -14,3 +14,5 @@ int main() { // Main function
     cout << "Square of 10: " << square(10) << endl; // Function call
     return 0;
 }
+
+
