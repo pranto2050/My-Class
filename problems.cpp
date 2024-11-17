@@ -14,4 +14,4 @@ int main() {
     cout << "Local x: " << x << endl;
     cout << "Global x: " << ::x + ::y << endl;  // Access global variable
     return 0;
-}
+};
