@@ -1,0 +1,30 @@
+
+
+
+They are are very important keyword in C++
+1. int --- Integer
+2. float --- Floating point number  
+3. char --- Character
+4. bool --- Boolean
+5. double --- Double precision floating point number
+6. long --- Long integer
+7. short --- Short integer
+8. unsigned --- Unsigned integer
+9. signed --- Signed integer
+10. void --- No value
+11. auto --- Automatically deduced type
+12. nullptr --- Null pointer
+13. if --- Condition
+14. else --- Alternative
+15. switch --- Multiple conditions
+16. case --- Condition in switch
+17. break --- Exit from loop or switch
+18. continue --- Skip to next iteration
+19. return --- Return from function
+20. goto --- Jump to label
+21. for --- Loop
+22. while --- Loop
+23. do --- Loop
+24. class --- Class definition
+25. struct --- Struct definition
+26. .......................++++

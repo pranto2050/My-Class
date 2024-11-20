@@ -1,0 +1,21 @@
+
+
+
+
+* Identifiers
+    Definition: Identifiers are the names used to identify variables, functions, arrays, or other user-defined elements in a program.
+    Example: 
+        int number;      // valid identifier
+        float total_1;   // valid identifier
+        double 1value;   // invalid (starts with a digit)
+        char @name;      // invalid (special character '@' is not allowed)
+
+
+
+
+* Constants
+    Definition: Constants are fixed values that cannot be altered during the execution of a program.
+    Example:
+        int MAX_SIZE = 100;  // valid constant
+        const double PI = 3.14159;
+        const int MAX_USERS = 100;

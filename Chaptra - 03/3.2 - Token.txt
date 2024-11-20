@@ -1,0 +1,10 @@
+
+
+// C++ Token
+There are six type of token
+1. Strings
+2. Keyword
+3. Identifier
+4. Operators
+5. Symbols / Spasial Cracter
+6. Constants
