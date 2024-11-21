@@ -41,7 +41,7 @@ int main() {
     int movie_store = 10;  // Maximum number of movies
     Movies movies[movie_store];  // Array to store movies
     int movieCount;            // Number of movies to input
-
+// Output the maximum number of movies that can be stored
     cout << "How many movies do you want to store? (Max " << movie_store << "): ";
     cin >> movieCount;
 
