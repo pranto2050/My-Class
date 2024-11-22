@@ -1,5 +1,6 @@
 
-// Class and Object
+// 5.5 Class and Object
+
 #include <iostream>
 using namespace std;
 // Class ------
@@ -29,7 +30,7 @@ int main() {
     cout << "First Cost: " << item2.first_cost << endl;
     cout << "Secound Cost: " << item2.secound_cost << endl;
     cout << "Total Cost: " << item2.total_cost << endl; // Total Cost of Object Two/Secound Output
-    
+
     return 0;
 }
 
