@@ -1,0 +1,38 @@
+
+
+
+Thera Are Three Type of Specifying ---
+1. Privat
+2. Public
+3. Protected
+
+
+
+**Privat Access Modifier**
+-------------------------
+- The privat access modifier is used to restrict access to a class, method, or variable from outside 
+
+** Public Access Modifier **
+-------------------------
+- The public access modifier is used to allow access to a class, method, or variable from anywhere
+
+
+** Protected Access Modifier **
+-------------------------
+- The protected access modifier is used to allow access to a class, method, or variable from within 
+
+
+Example"
+
+class class_name{
+    privat: 
+    int roll;
+    int id;
+    string name;
+
+    public:
+    string class;
+    string address;
+    int phone;
+}
+
