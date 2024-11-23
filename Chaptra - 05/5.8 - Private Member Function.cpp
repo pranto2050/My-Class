@@ -27,13 +27,10 @@ public:
 };
 
 int main() {
-    Calculator calc;
+    Calculator calc; // Object Make
 
     // শুধুমাত্র পাবলিক মেম্বার ফাংশনের মাধ্যমে প্রাইভেট ফাংশনে অ্যাক্সেস করা সম্ভব
     calc.displaySquare(5);
-
-    // নিচের লাইনটি ত্রুটি তৈরি করবে কারণ square() প্রাইভেট
-    // calc.square(5); 
 
     return 0;
 }
