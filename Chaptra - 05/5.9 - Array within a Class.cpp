@@ -17,30 +17,24 @@ public:
     void setMarks(int mmark[]) {
         for (int i = 0; i < 5; i++) {
             marks[i] = mmark[i];
-        }
-    }
-
+        };
+    };
     // মার্কস দেখানোর ফাংশন
     void displayMarks() {
         cout << "Marks of the student: ";
         for (int i = 0; i < 5; i++) {
             cout << marks[i] << " ";
-        }
+        };
         cout << endl;
-    }
+    };
 };
-
 int main() {
     Student s1; // একটি Student অবজেক্ট তৈরি করা হলো
-
     // মার্কস ডাটা
     int myMarks[5] = {85, 90, 78, 88, 76};
-
     // মার্কস সেট করা
     s1.setMarks(myMarks);
-
     // মার্কস দেখানো
     s1.displayMarks();
-
     return 0;
-}
+};
