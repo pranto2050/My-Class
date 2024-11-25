@@ -21,7 +21,7 @@
     আইডেন্টিফায়ারের দৈর্ঘ্যের নির্দিষ্ট সীমা নেই, তবে এটি সংক্ষিপ্ত ও অর্থপূর্ণ হওয়া উচিত।
     ৬. বিশেষ চিহ্ন ব্য
 
-    
+
 
 * Identifiers
     Definition: Identifiers are the names used to identify variables, functions, arrays, or other user-defined elements in a program.
@@ -34,9 +34,24 @@
 
 
 
+
+Constants কী? (Bangla) ----
+    Constants হলো এমন মান যা প্রোগ্রামের কার্যক্রম চলাকালীন সময়ে পরিবর্তন করা যায় না। এটি read-only ডাটা।
+
 * Constants
     Definition: Constants are fixed values that cannot be altered during the execution of a program.
     Example:
         int MAX_SIZE = 100;  // valid constant
         const double PI = 3.14159;
         const int MAX_USERS = 100;
+
+
+
+
+
+
+
+
+
+
+        
