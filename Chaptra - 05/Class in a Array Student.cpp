@@ -1,6 +1,8 @@
 
 
 
+// Array In a class --- in c++ 
+
 #include <iostream>
 using namespace std;
 // int subject = 5;
@@ -9,7 +11,7 @@ class students{
     int id;
     string name;
     int age;
-    int mark[5];
+    int mark[5]; // Array Object
     public:
     void setStudentValue();
     void displayStudent();

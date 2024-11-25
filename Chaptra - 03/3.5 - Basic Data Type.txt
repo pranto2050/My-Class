@@ -1,0 +1,38 @@
+
+
+
+
+----- Basic Data Type in C++ ----- 
+
+C++ Has 3 Type Data Type
+    1. User Defined Data Type
+    2. Built in Data Type
+    3. Derived Data Type
+
+
+User Defined Data Type: 
+    1. Structure
+    2. Union
+    3. Class
+    4. Enum
+
+
+
+
+Built in Data Type:
+    1. Integer Data Type
+    2. Floating Point Data Type
+    3. Character Data Type
+    4. Boolean Data Type
+    5. Void Data Type
+    6. Constant Data Type
+
+
+
+
+
+Derived Data Type:
+    1. Pointer Data Type
+    2. Array Data Type
+    3. Function Data Type
+    4. Reference Data Type
