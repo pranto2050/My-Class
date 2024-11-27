@@ -1,0 +1,142 @@
+
+
+
+
+
+
+// Memory Allocation for a Object in C++
+
+
+C++-এ একটি অবজেক্টের জন্য মেমরি বরাদ্দ (Memory Allocation)
+    C++-এ যখন একটি ক্লাসের অবজেক্ট তৈরি করা হয়, তখন অবজেক্টের ডেটা মেম্বার সংরক্ষণের জন্য মেমরি বরাদ্দ করা হয়। 
+    অবজেক্টটি স্ট্যাটিক্যালি (statistically) বা ডাইনামিক্যালি (dynamically) তৈরি করা হলে মেমরি বরাদ্দের ধরন ভিন্ন হয়।
+
+
+
+মেমরি বরাদ্দের ধরন:
+    ১. Static Allocation (স্থির বরাদ্দ)
+        অবজেক্টটি স্ট্যাক মেমরি (stack) তে তৈরি হয়।
+        কম্পাইল টাইমে মেমরি বরাদ্দ হয় এবং অবজেক্টের স্কোপ (scope) শেষ হলে মেমরি স্বয়ংক্রিয়ভাবে মুক্ত হয়।
+
+
+    ২. Dynamic Allocation (গতিশীল বরাদ্দ)
+        অবজেক্টটি হিপ মেমরি (heap) তে new কীওয়ার্ড ব্যবহার করে তৈরি করা হয়।
+        এই মেমরি ম্যানুয়ালি পরিচালনা করতে হয় এবং delete ব্যবহার করে মুক্ত করতে হয়।
+
+
+
+
+
+
+
+Static Allocation
+    স্ট্যাটিক অবজেক্ট তৈরি করলে মেমরি স্বয়ংক্রিয়ভাবে বরাদ্দ এবং স্কোপ শেষ হলে মুক্ত হয়।
+
+
+#include <iostream>
+using namespace std;
+class MyClass {
+    int x, y; // ডেটা মেম্বার ----
+
+public:
+    void setValues(int a, int b) {
+        x = a;
+        y = b;
+    }
+
+    void display() {
+        cout << "x: " << x << ", y: " << y << endl;
+    }
+};
+
+int main() {
+    MyClass obj; // Static allocation
+
+    obj.setValues(10, 20);
+    obj.display();
+
+    // অবজেক্টের স্কোপ শেষ হলে মেমরি স্বয়ংক্রিয়ভাবে মুক্ত হয়
+    return 0;
+}
+
+
+বর্ণনা:
+    obj অবজেক্টটি স্ট্যাক মেমরি তে বরাদ্দ করা হয়েছে।
+    main() ফাংশনের শেষ হলে মেমরি স্বয়ংক্রিয়ভাবে মুক্ত হয়।
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dynamic Allocation
+    অবজেক্টটি ডাইনামিক্যালি তৈরি করা হলে হিপ মেমরিতে বরাদ্দ হয়।
+
+#include <iostream>
+using namespace std;
+
+class MyClass {
+    int x, y;
+
+public:
+    void setValues(int a, int b) {
+        x = a;
+        y = b;
+    }
+
+    void display() {
+        cout << "x: " << x << ", y: " << y << endl;
+    }
+};
+
+int main() {
+    // Dynamic allocation
+    MyClass* obj = new MyClass;
+
+    obj->setValues(30, 40);
+    obj->display();
+
+    // মেমরি মুক্ত করতে delete ব্যবহার করুন
+    delete obj;
+
+    return 0;
+}
+
+বর্ণনা:
+    obj অবজেক্টটি হিপ মেমরি তে বরাদ্দ করা হয়েছে।
+    মেমরি মুক্ত না করলে মেমরি লিক (memory leak) হতে পারে।
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

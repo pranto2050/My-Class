@@ -1,0 +1,182 @@
+
+
+
+
+
+
+Dynamic Initialization of Variables ----
+
+Dynamic Initialization of Variables in C++
+    Dynamic Initialization of Variables refers to initializing variables at runtime rather than compile time. 
+    This allows variables to be assigned values based on computations or inputs that are not known until the program is executed.
+
+
+Why Dynamic Initialization?
+    1. Flexibility: Variables can be initialized based on user inputs or function returns.
+    2. Efficiency: Resources are allocated only when needed.
+    3. Use in Classes: Helps in initializing class objects with dynamic data.
+
+Syntax
+    Variables are dynamically initialized during execution using expressions or function calls.
+
+data_type variable_name = expression;
+
+
+
+
+
+
+Examples
+    1. Initializing with User Input
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    // Dynamic initialization
+    int square = num * num;
+
+    cout << "Square of " << num << " is " << square << endl;
+    return 0;
+}
+
+
+Explanation:
+    Here, square is initialized dynamically based on the value of num entered by the user.
+
+
+
+
+
+
+
+
+2. Initializing with Function Calls
+
+#include <iostream>
+using namespace std;
+
+double getRadius() {
+    return 7.5; // Example value
+}
+
+int main() {
+    // Dynamic initialization using a function
+    double radius = getRadius();
+    double area = 3.14159 * radius * radius;
+
+    cout << "Area of the circle: " << area << endl;
+    return 0;
+}
+
+
+Explanation:
+    The variable radius is dynamically initialized with the return value of the function getRadius.
+
+
+
+
+
+
+
+3. Dynamic Initialization in Classes
+
+#include <iostream>
+using namespace std;
+
+class Circle {
+    double radius;
+
+public:
+    Circle(double r) : radius(r) {} // Constructor with dynamic initialization
+
+    double getArea() {
+        return 3.14159 * radius * radius;
+    }
+};
+
+int main() {
+    double userRadius;
+    cout << "Enter radius: ";
+    cin >> userRadius;
+
+    // Dynamic initialization of object
+    Circle circle(userRadius);
+
+    cout << "Area of the circle: " << circle.getArea() << endl;
+    return 0;
+}
+
+Explanation:
+    The Circle object is dynamically initialized using the value provided by the user at runtime.
+
+
+
+
+
+4. Initializing Arrays Dynamically
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int size;
+    cout << "Enter the size of the array: ";
+    cin >> size;
+
+    // Dynamic initialization
+    int* arr = new int[size];
+
+    for (int i = 0; i < size; ++i) {
+        arr[i] = i + 1; // Assigning values dynamically
+    }
+
+    cout << "Array elements: ";
+    for (int i = 0; i < size; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    delete[] arr; // Freeing memory
+    return 0;
+}
+
+
+Explanation:
+    Here, an array is dynamically allocated and initialized based on the size entered by the user.
+
+
+Key Points
+    1. Dynamic Initialization is done at runtime using expressions, inputs, or function returns.
+    2. It is often used in scenarios where values are not known at compile time.
+
+
+    3. Advantages:
+        Optimizes memory and computation.
+        Adds flexibility to the program.
+
+
+
+    4. Disadvantages:
+        If not handled properly, it may lead to resource leaks or runtime errors.
+
+
+
+
+
+Applications: 
+    Dynamic memory allocation.
+    Class object initialization with runtime data.
+    Input-driven variable assignments.
+    Complex computations or function dependencies during initialization.
+
+
+
+
+
+
+    

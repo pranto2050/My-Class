@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+Symbolic Constants in C++ ----------- 
+
+
+Symbolic Constants in C++ are fixed values that do not change during the execution of a program. They are defined using #define preprocessor directive or the const keyword. These constants make the program more readable, maintainable, and less error-prone.
+
+    Why Use Symbolic Constants?
+    Readability: Symbolic names make the code more meaningful.
+    Maintainability: Easy to update a value in one place without searching through the code.
+    Avoid Hardcoding: Prevents the direct use of "magic numbers" or literals in code.
+
+
+
+Types of Symbolic Constants in C++
+    1. Using #define Directive
+T   he #define directive is used to define a symbolic constant. It is replaced by its value during preprocessing.
+
+Syntax:
+#define CONSTANT_NAME value
+
+Example: C++ Code:
+#include <iostream>  
+#define PI 3.14159  ------- symbolic constant
+#define MAX_STUDENTS 50  ------- symbolic constant
+
+int main() {
+    std::cout << "Value of PI: " << PI << std::endl;
+    std::cout << "Maximum students allowed: " << MAX_STUDENTS << std::endl;
+    return 0;
+}
+
+
+
+
+
+2. Using const Keyword
+The const keyword defines symbolic constants that are type-safe and scoped.
+
+Syntax: C++ Code:
+
+const data_type CONSTANT_NAME = value; ------ Symbolic Constants in C++
+Symbolic Constants in C++ are fixed values that do not change during the execution of a program. They are defined using #define preprocessor directive or the const keyword. These constants make the program more readable, maintainable, and less error-prone.
+
+Why Use Symbolic Constants?
+Readability: Symbolic names make the code more meaningful.
+Maintainability: Easy to update a value in one place without searching through the code.
+Avoid Hardcoding: Prevents the direct use of "magic numbers" or literals in code.
+Types of Symbolic Constants in C++
+1. Using #define Directive
+The #define directive is used to define a symbolic constant. It is replaced by its value during preprocessing.
+
+Syntax:
+
+#define CONSTANT_NAME value // Symbolic Constants in c++
+
+
+Example: Symbolic Constants in c++
+
+#include <iostream>
+#define PI 3.14159 // Symbolic Constants in c++  #define
+#define MAX_STUDENTS 50 // Symbolic Constants in c++ #define
+
+int main() {
+    std::cout << "Value of PI: " << PI << std::endl;
+    std::cout << "Maximum students allowed: " << MAX_STUDENTS << std::endl;
+    return 0;
+}
+
+
+
+
+2. Using const Keyword
+The const keyword defines symbolic constants that are type-safe and scoped.
+
+Syntax: C++ Code:
+const data_type CONSTANT_NAME = value; // Keyword Constants in c++
+
+
+
+
+
+
+
+
+Best Practices
+    Use const instead of #define when type safety is required.
+    Use descriptive names for constants (e.g., MAX_HEIGHT instead of X).
+    Group related constants in a namespace or class for better organization.
+
+
+
+#include <iostream>
+using namespace std;
+
+class PhysicsConstants {
+public:
+    static const double GRAVITY;
+    static const double SPEED_OF_LIGHT;
+};
+
+const double PhysicsConstants::GRAVITY = 9.8;
+const double PhysicsConstants::SPEED_OF_LIGHT = 299792458;
+
+int main() {
+    cout << "Gravity: " << PhysicsConstants::GRAVITY << " m/s^2" << endl;
+    cout << "Speed of Light: " << PhysicsConstants::SPEED_OF_LIGHT << " m/s" << endl;
+    return 0;
+}
+
