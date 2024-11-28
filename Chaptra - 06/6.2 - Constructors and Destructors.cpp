@@ -6,28 +6,28 @@
 #include <iostream>
 using namespace std;
 
-class Person {
+class Students {
 private:
     string name;
     int age;
 public:
-    // Default Constructor
-    Person() {
+    // Default Constructor ----- in c++
+    Students() { // Def---
         name = "Unknown";
         age = 0;
         cout << "Default constructor called!" << endl;
     }
 
-    // Parameterized Constructor
-    Person(string n, int a) {
+    // Parameterized Constructor ---- in c++
+    Students(string n, int a) {
         name = n;
         age = a;
         cout << "Parameterized constructor called!" << endl;
     }
 
-    // Copy Constructor
-    Person(const Person &p) {
-        name = p.name;
+    // Copy Constructor ---- in c++
+    Students(const Students &p) {  // & Is Mamory address -----
+        name = p.name; // 
         age = p.age;
         cout << "Copy constructor called!" << endl;
     }
@@ -38,14 +38,14 @@ public:
 };
 
 int main() {
-    Person p1; // Default constructor
-    p1.display();
+    Students p1; // Default constructor ----- in c++
+    p1.display(); // ------- For Output
 
-    Person p2("John", 25); // Parameterized constructor
-    p2.display();
+    Students p2("John", 25); // Parameterized constructor 
+    p2.display(); // ------- For Output
 
-    Person p3 = p2; // Copy constructor
-    p3.display();
+    Students p3 = p2; // Copy constructor
+    p3.display(); // ------- For Output
 
     return 0;
 }
