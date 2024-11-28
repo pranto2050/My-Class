@@ -13,8 +13,8 @@ private:
 public:
     // Default Constructor ----- in c++
     Students() { // Def---
-        name = "Unknown";
-        age = 0;
+        name = "Md.Pranto";
+        age = 20;
         cout << "Default constructor called!" << endl;
     }
 
@@ -41,7 +41,7 @@ int main() {
     Students p1; // Default constructor ----- in c++
     p1.display(); // ------- For Output
 
-    Students p2("John", 25); // Parameterized constructor 
+    Students p2("Santo", 16); // Parameterized constructor 
     p2.display(); // ------- For Output
 
     Students p3 = p2; // Copy constructor
