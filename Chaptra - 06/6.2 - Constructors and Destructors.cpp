@@ -22,21 +22,19 @@ public:
     Students(string n, int a) {
         name = n;
         age = a;
-        cout << "Parameterized constructor called!" << endl;
+        cout << "Parameterized constructor called here parameter is n and a" << endl;
     }
-
     // Copy Constructor ---- in c++
     Students(const Students &p) {  // & Is Mamory address -----
         name = p.name; // 
         age = p.age;
-        cout << "Copy constructor called!" << endl;
+        cout << "Copy constructor called this function name = p.name and age = p.age" << endl;
     }
 
     void display() {
-        cout << "Name: " << name << ", Age: " << age << endl;
+        cout << "Name: " << name << ", Age: " << age << endl;   // Output
     }
 };
-
 int main() {
     Students p1; // Default constructor ----- in c++
     p1.display(); // ------- For Output
