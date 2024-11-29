@@ -1,7 +1,7 @@
 
 
 
-
+// C++ এ Derived Data Type: Function (Bangla)
 /*
 Function কী?
     Function হলো এমন একটি কোডের অংশ, যা প্রোগ্রামে একাধিকবার ডাকা (call) যেতে পারে। 

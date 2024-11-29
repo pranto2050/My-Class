@@ -3,15 +3,15 @@
 //  Parameter Constructor -- in c++
 
 #include <iostream>
+#include <string>
+#include <sum.h>
 using namespace std;
 class students {
-
     private:
         string name;
         int age;
         int id;
     public:
-
         students(string nam, int ag, int ro) {
             name = nam;
             age = ag;
