@@ -21,7 +21,7 @@ class students {
 };
 
 int main() {
-    students one("Rahim", 20, 23303101);
+    students one("Md.Pranto Islam", 20, 23303101);
     return 0;
 };
 

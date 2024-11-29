@@ -1,8 +1,8 @@
 
 
 // File Management in C++: or Work with Files in C++
-#include <iostream>
-#include <fstream>
+// #include <iostream>
+// #include <fstream>
 
 /*
 
@@ -15,13 +15,13 @@ Working with Files in C++:
 
 */
 
-using namespace std;
-int main() {
-    string name = "Md.pranto";
-    // ofstream: Stream class to write on files
-    ofstream out("sum.txt");
-    out << name;
+// using namespace std;
+// int main() {
+//     string name = "Md.pranto";
+//     // ofstream: Stream class to write on files
+//     ofstream out("sum.txt");
+//     out << name;
 
     
-    return 0;
-}
+//     return 0;
+// }
