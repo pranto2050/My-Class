@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string>
-#include <sum.h>
 using namespace std;
 class students {
     private:

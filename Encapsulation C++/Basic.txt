@@ -1,0 +1,99 @@
+
+
+
+Encapsulation হলো Object-Oriented Programming (OOP)-এর একটি গুরুত্বপূর্ণ ধারণা, 
+যেখানে ডেটা এবং ডেটা পরিচালনা করার জন্য ব্যবহৃত মেথডগুলোকে একসঙ্গে প্যাকেজ করে রাখা হয়। 
+সহজভাবে বললে, ডেটাকে প্রাইভেট করে রেখে সেটি কেবল নির্দিষ্ট মেথডের মাধ্যমে অ্যাক্সেসযোগ্য করা হয়। 
+এর মাধ্যমে ডেটা সুরক্ষিত থাকে এবং বাইরের কোনো কোড সরাসরি ডেটাকে পরিবর্তন করতে পারে না।
+
+Encapsulation-এর সুবিধা: 
+    1. ডেটার সুরক্ষা: ডেটা সরাসরি অ্যাক্সেস করা থেকে রক্ষা পায় এবং কেবল নির্দিষ্ট মেথডের মাধ্যমে পরিবর্তন করা যায়।
+    2. সহজ রক্ষণাবেক্ষণ: কোড মডুলার হয়, ফলে পরিবর্তন বা ডিবাগ করা সহজ হয়।
+    3. কোড পুনরায় ব্যবহার: Encapsulation ব্যবহার করে সহজেই কোড পুনরায় ব্যবহার করা যায়।
+
+
+
+
+Encapsulation কিভাবে কাজ করে?
+    Encapsulation-এর জন্য C++-এ class এবং access specifiers 
+    (যেমন private, protected, public) ব্যবহার করা হয়।
+
+    1. private: ক্লাসের ভেতরে থাকা ডেটা বা মেথড বাইরের কোনো কোড দ্বারা সরাসরি অ্যাক্সেস করা যায় না।
+    2. public: ডেটা বা মেথডকে বাইরের কোড দ্বারা অ্যাক্সেসযোগ্য করা হয়।
+    3. protected: ক্লাসের ভেতরে এবং ডেরাইভড ক্লাসের জন্য অ্যাক্সেসযোগ্য হয়।
+
+
+
+উদাহরণ: Encapsulation: 
+    নিচে একটি উদাহরণ দেয়া হলো, যেখানে private ডেটা সদস্য এবং public মেথড ব্যবহার করা হয়েছে:
+
+
+
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int age;
+
+public:
+    // Setter মেথড (ডেটা সেট করার জন্য)
+    void setName(string n) { // this is perimeterize function -- string n is a parameter ----
+        name = n;
+    }
+
+    void setAge(int a) { // this is perimeterize function string n is a parameter
+        if (a > 0) {
+            age = a;
+        } else {
+            cout << "Invalid age!" << endl;
+        }
+    }
+
+    // Getter মেথড (ডেটা পড়ার জন্য)
+    string getName() {
+        return name;
+    }
+
+    int getAge() {
+        return age;
+    }
+};
+
+int main() {
+    Student s;
+
+    // ডেটা সেট করা (Setter মেথড ব্যবহার করে)
+    s.setName("Md. Pranto Islam"); // Pass Argument
+    s.setAge(22); // Psaa the Argument
+
+    // ডেটা পড়া (Getter মেথড ব্যবহার করে)
+    cout << "Name: " << s.getName() << endl;
+    cout << "Age: " << s.getAge() << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
