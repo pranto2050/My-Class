@@ -15,6 +15,7 @@ private:
     int releaseYear;
     int rating;
 public:
+
     // Method to input movie details
     void inputDetails() {
         cout << "Enter movie title: ";
@@ -39,7 +40,7 @@ public:
 
 int main() {
     int movie_store = 10;  // Maximum number of movies
-    Movies movies[movie_store];  // Array to store movies
+    Movies movie[movie_store];  // Array to store movies
     int movieCount;            // Number of movies to input
 // Output the maximum number of movies that can be stored
     cout << "How many movies do you want to store? (Max " << movie_store << "): ";
@@ -49,14 +50,14 @@ int main() {
     // Input movie details
     for (int i = 0; i < movieCount; ++i) {
         cout << endl << "Enter details for movie " << (i + 1) << ":" << endl;
-        movies[i].inputDetails();
+        movie[i].inputDetails();
     }
 
     // Display movie details -- Section
     cout << "\nStored Movies:\n";
     for (int i = 0; i < movieCount; ++i) {
         cout << "\nMovie " << (i + 1) << " Details:";
-        movies[i].displayDetails();
+        movie[i].displayDetails();
     }
     return 0;
 }

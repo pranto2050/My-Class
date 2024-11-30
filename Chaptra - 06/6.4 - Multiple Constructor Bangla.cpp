@@ -22,21 +22,21 @@ public:
         name = "Md.Pranto Islam";
         age = 20;
         cout << "ডিফল্ট কনস্ট্রাক্টর চালু: " << name << ", বয়স: " << age << endl;
-    }
+    };
 
     // এক প্যারামিটারের কনস্ট্রাক্টর
     Student(string studentName) {
         name = studentName;
         age = 0;
         cout << "নামের কনস্ট্রাক্টর চালু: " << name << ", বয়স: " << age << endl;
-    }
+    };
 
     // দুই প্যারামিটারের কনস্ট্রাক্টর
     Student(string studentName, int studentAge) {
         name = studentName;
         age = studentAge;
         cout << "নাম এবং বয়সের কনস্ট্রাক্টর চালু: " << name << ", বয়স: " << age << endl;
-    }
+    };
 };
 
 int main() {
