@@ -15,7 +15,6 @@ private:
     int releaseYear;
     int rating;
 public:
-
     // Method to input movie details
     void inputDetails() {
         cout << "Enter movie title: ";

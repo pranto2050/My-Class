@@ -17,14 +17,18 @@ public:
 };
 
 int main() {
-    // Dynamic allocation
-    MyClass* obj = new MyClass;
-
-    obj->setValues(30, 40);
-    obj->display();
-
-    // মেমরি মুক্ত করতে delete ব্যবহার করুন
-    delete obj;
-
+    cout << "Hello, World!" << endl;
+    MyClass obj;
+    obj.setValues(10, 20);
+    obj.display();
     return 0;
+// Output
+// Hello, World!
+// x: 10, y: 20
+int sum = 0;
+for (int i = 0; i < 10; i++) {
+    sum += i;
+    }
+    cout << "Sum: " << sum << endl;
+    // Output
 }
