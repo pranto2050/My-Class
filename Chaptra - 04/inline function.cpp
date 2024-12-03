@@ -1,5 +1,5 @@
 
-
+// Inline functions that return the sum of two numbers
 #include <iostream>
 using namespace std;
 // Inline function

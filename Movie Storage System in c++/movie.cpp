@@ -30,11 +30,11 @@ public:
 
     // Method to display movie details
     void displayDetails() const {
-        cout << "\nTitle: " << title
-             << "\nDirector: " << director
-             << "\nRelease Year: " << releaseYear
-             << "\nIMDb Rating: " << rating << endl;
-    }
+        cout << "Title: " << title << endl;
+        cout << "Director: " << director << endl;
+        cout  << "Release Year: " << releaseYear << endl;
+        cout << "IMDb Rating: " << rating << endl;
+    };
 };
 
 int main() {
