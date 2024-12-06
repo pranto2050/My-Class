@@ -45,7 +45,6 @@ int main() {
     cout << "How many movies do you want to store? (Max " << movie_store << "): ";
     cin >> movieCount;
 
-
     // Input movie details
     for (int i = 0; i < movieCount; ++i) {
         cout << endl << "Enter details for movie " << (i + 1) << ":" << endl;
