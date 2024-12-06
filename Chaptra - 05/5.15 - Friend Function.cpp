@@ -9,9 +9,7 @@ private:
 public:
     Number(int v){
         value = v;
-    } 
-
-
+    }     
     friend int addNumbers(Number n1, Number n2);
 };
 
@@ -26,6 +24,5 @@ int main() {
 
     int sum = addNumbers(num1, num2);  // Call friend function to get the sum
     cout << "The sum of the two numbers is: " << sum << endl;
-
     return 0;
 }

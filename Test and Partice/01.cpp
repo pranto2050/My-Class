@@ -1,33 +1,24 @@
 
+
+
 #include <iostream>
 using namespace std;
 
-class Calculator {
-private:
-    int num1, num2;
+class Numbers {
 
-public:
-    Calculator(int a, int b) {
-        num1 = a;
-        num2 = b;
-    }
-
-    // Friend function declaration
-    friend int sum(Calculator calc);
+    private:
+    int number_one, number_two;
+    public:
+    void setNumber(int num_one, int num_two){ {
+        number_one = num_one;
+        number_two = num_two;
+    };
+    friend void total (int num_one, int num_two);
 };
-
-// Friend function definition
-int sum(Calculator calc) {
-    return calc.num1 + calc.num2;
-}
-
+void total(int num_one, int num_two){
+    cout << "The sum of the two numbers is: " << num_one + num_two << endl;
+};
 int main() {
-    int a, b;
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
-
-    Calculator calc(a, b);
-    cout << "Sum: " << sum(calc) << endl;
-
+    
     return 0;
 }
