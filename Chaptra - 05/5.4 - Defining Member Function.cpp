@@ -1,9 +1,15 @@
+
+
+// 
+// 5.4 - Defining Member Function
+
 #include <iostream>
 using namespace std;
 
 // Class ------
 class Students {
 public:
+
     int roll_no;
     string name;
 
@@ -25,13 +31,15 @@ void Students::displayss() {
 
 // Main Function -------
 int main() {
+    cout << "Md.Pranto Ali" << endl;
+    cout << "23303101" << endl;
     Students student1;
     Students student2;
     student1.roll_no = 1; // Data input in roll_no
     student1.name = "Ali"; // Data input in name 
     student1.display();  // Display data of student2 (inside class function)
 
-    
+    // Used Scop Rasulation Operator
     student2.roll_no = 2; // Data input in roll_no
     student2.name = "Ahmed"; // Data input in name
     student2.displayss();  // Display data of student1 (outside class function)
