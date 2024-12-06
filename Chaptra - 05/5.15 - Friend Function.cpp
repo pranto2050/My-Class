@@ -7,7 +7,9 @@ private:
     int value;
 
 public:
-    Number(int v) : value(v) {} 
+    Number(int v){
+        value = v;
+    } 
 
 
     friend int addNumbers(Number n1, Number n2);
