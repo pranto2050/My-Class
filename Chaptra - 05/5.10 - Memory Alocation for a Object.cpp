@@ -1,12 +1,5 @@
 
-
-
-
 // Memory Allocation for a Object in C++
-
-
-
-
 #include <iostream>
 using namespace std;
 
