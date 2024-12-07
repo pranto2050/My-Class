@@ -29,12 +29,13 @@ public:
         name = p.name; // 
         age = p.age;
         cout << "Copy constructor called this function name = p.name and age = p.age" << endl;
-    }
+    };
 
     void display() {
         cout << "Name: " << name << ", Age: " << age << endl;   // Output
-    }
+    };
 };
+
 int main() {
     Students p1; // Default constructor ----- in c++
     p1.display(); // ------- For Output
