@@ -1,11 +1,8 @@
 
-
-
 // Constructor -----
 
 #include <iostream>
 using namespace std;
-
 class Students {
 private:
     string name;
@@ -17,7 +14,6 @@ public:
         age = 20;
         cout << "Default constructor called!" << endl;
     }
-
     // Parameterized Constructor ---- in c++
     Students(string n, int a) {
         name = n;
@@ -30,12 +26,10 @@ public:
         age = p.age;
         cout << "Copy constructor called this function name = p.name and age = p.age" << endl;
     };
-
     void display() {
         cout << "Name: " << name << ", Age: " << age << endl;   // Output
     };
 };
-
 int main() {
     Students p1; // Default constructor ----- in c++
     p1.display(); // ------- For Output
