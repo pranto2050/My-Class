@@ -15,9 +15,7 @@ Using method—
 
 #include <iostream>
 #include <string>
-
 using namespace std;
-
 class Bank_Account {
 private:
     string account_holder_name;
@@ -31,7 +29,7 @@ public:
     // Display account details----------
     void displayAccountDetails() {
         cout << "Account Holder Name is: " << account_holder_name << endl;
-        cout << "Account Balance: " << account_balance << endl;
+        cout << "Account Balance: " << account_balance << endl << endl;
     };
     // Withdrow from account ------ --
     void withdraw(int amount) {
@@ -44,21 +42,21 @@ public:
     };
     // Add balance------ 
     void addBalance(int amount) {
-        account_balance += amount;
+        account_balance = account_balance + amount;
         cout << "Balance added successfully!" << endl << "New balance: " << account_balance << endl << endl;
     };
 };
 
 int main() {
-    // Creating an object of Bank_Account
+    // Object Bank_Account class ------>
     Bank_Account account("Md.Pranto Islam", 99999999);
-    // Display account details
+    // Display account details ------>
     account.displayAccountDetails();
-    // Withdraw from account
+    // Withdraw function Call
     account.withdraw(1);
-    // Add balance to account
+    // Add balance function Call
     account.addBalance(500);
-    // Display account details
+    // Display letest or Update info
     account.displayAccountDetails();
 
     return 0;
