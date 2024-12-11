@@ -1,0 +1,40 @@
+
+// Deferient Name to class name
+
+****** Super class ******
+****** Mother class ******
+****** Parent class ******
+****** Base class ******
+
+****** ||||| ******
+
+
+****** Child class ******
+****** Sub class ******
+****** Derived class ******
+****** Daughter class ******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
