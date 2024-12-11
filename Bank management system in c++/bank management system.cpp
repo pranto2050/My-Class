@@ -9,8 +9,6 @@ Using method—
 1. Display account details
 2. Account withdraw and change vallue in main Balance
 3. Add balance and change value in main Balance
-
-
 */
 
 #include <iostream>
