@@ -38,6 +38,7 @@ public:
 };
 
 int main() {
+    cout << "Name: MD.Pranto Ali" << endl << "ID: 23303101" << endl;
     // Using the default constructor
     Student student1;
 

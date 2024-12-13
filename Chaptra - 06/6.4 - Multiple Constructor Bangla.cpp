@@ -40,6 +40,7 @@ public:
 };
 
 int main() {
+    cout << "Name: MD.Pranto Ali" << endl << "ID: 23303101" << endl;
     // ডিফল্ট কনস্ট্রাক্টর ব্যবহার
     Student student1;
 

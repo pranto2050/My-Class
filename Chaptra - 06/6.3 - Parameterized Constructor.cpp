@@ -21,6 +21,7 @@ class students {
 };
 
 int main() {
+    cout << "Name: MD.Pranto Ali" << endl << "ID: 23303101" << endl;
     students one("Md.Pranto Islam", 20, 23303101);
     return 0;
 };

@@ -1,0 +1,67 @@
+
+
+
+// Explain in Bangla
+
+C++-এ ইনহেরিটেন্স (Inheritance) একটি অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP) এর গুরুত্বপূর্ণ বৈশিষ্ট্য। 
+এটি একটি ক্লাসকে (যাকে ডেরাইভড ক্লাস বলা হয়) অন্য একটি ক্লাসের (যাকে বেস ক্লাস বলা হয়) 
+প্রোপার্টি ও ফাংশন উত্তরাধিকার সূত্রে পেতে দেয়। এর মাধ্যমে কোড পুনর্ব্যবহারযোগ্য হয় এবং ক্লাসগুলোর মধ্যে একটি 
+শ্রেণিবিন্যাসমূলক সম্পর্ক তৈরি হয়।
+
+
+
+// Explain in English
+
+Inheritance in C++ is a fundamental concept of object-oriented programming that allows 
+a class (called the derived class) to acquire the properties and behaviors of another 
+class (called the base class). It promotes code reusability and establishes a hierarchical 
+relationship between classes.
+
+
+
+
+
+
+
+
+
+
+// Deferient Name to class name
+
+****** Super class ******
+****** Mother class ******
+****** Parent class ******
+****** Base class ******
+
+****** ||||| ******
+
+
+****** Child class ******
+****** Sub class ******
+****** Derived class ******
+****** Daughter class ******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
