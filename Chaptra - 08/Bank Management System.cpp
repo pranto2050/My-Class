@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 class Students {
@@ -40,6 +41,5 @@ int main() {
     Student s1("Alice", "123 Main St", 1234567890, 101, "Computer Science");
     // Display the data
     s1.show();
-
     return 0;
 }
