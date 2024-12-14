@@ -1,7 +1,5 @@
 
-
 //  Parameter Constructor -- in c++
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -19,7 +17,6 @@ class students {
             cout << "ID: " << id << endl;
         };
 };
-
 int main() {
     cout << "Name: MD.Pranto Ali" << endl << "ID: 23303101" << endl;
     students one("Md.Pranto Islam", 20, 23303101);

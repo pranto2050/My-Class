@@ -6,7 +6,6 @@ but it takes a reference to an object of the same class as its parameter.
 */
 #include <iostream>
 using namespace std;
-
 // Copy Constructor Example in C++
 class Example {
     int x;
@@ -14,16 +13,14 @@ public:
     Example(int val){
         x = val;
     }; // Parameterized constructor
-    
     // Copy Constructor
     Example(Example &obj){
         x = obj.x;
         cout << "Copy Constructor Called" << endl;
-    }
-    
+    };
     void display() {
         cout << "Value of x: " << x << endl;
-    }
+    };
 };
 // Main function
 int main() {
@@ -34,6 +31,5 @@ int main() {
     obj1.display();
     cout << "Object 2: " << endl;
     obj2.display();
-    
     return 0;
 }

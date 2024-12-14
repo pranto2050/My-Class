@@ -31,28 +31,5 @@ int main() {
 
     // Providing both name and age
     Student student3("MD.Irfan Islam", 18); // Constructor called: MD.Irfan Islam, Age: 18
-
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
