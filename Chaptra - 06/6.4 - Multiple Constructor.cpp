@@ -1,11 +1,8 @@
 
-
-
 /* 
 Multiple : This is known as constructor overloading, 
            which means that a class can have more than one constructor.
  */
-
 
 #include <iostream>
 using namespace std;

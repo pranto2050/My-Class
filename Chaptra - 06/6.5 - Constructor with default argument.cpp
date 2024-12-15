@@ -8,7 +8,6 @@ class Student {
 private:
     string name;
     int age;
-
 public:
     // Constructor with default arguments
     Student(string studentName = "Md.Pranto Islam", int studentAge = 20) {
