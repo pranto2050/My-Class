@@ -29,7 +29,9 @@ private:
 public:
     // Constructor that calls the base class constructor
     Student(string n, string addr, int ph, int id, string mj)
-        : Students(n, addr, ph, id), subject(mj) {};
+        : Students(n, addr, ph, id) {
+        subject = mj;
+        };
     // Override displayData to include the major
     void show() {
         displayData(); // Call base class displayData
