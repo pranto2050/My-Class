@@ -10,7 +10,6 @@ Using method—
 2. Account withdraw and change vallue in main Balance
 3. Add balance and change value in main Balance
 */
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -43,6 +42,9 @@ public:
         account_balance = account_balance + amount;
         cout << "Balance added successfully!" << endl << "New balance: " << account_balance << endl << endl;
     };
+    ~Bank_Account() {
+        cout << "Account Holder Name ";
+    };
 };
 
 int main() {
@@ -56,6 +58,8 @@ int main() {
     account.addBalance(500);
     // Display letest or Update info
     account.displayAccountDetails();
+    // Destructor call
+    account.~Bank_Account();
 
     return 0;
 }
