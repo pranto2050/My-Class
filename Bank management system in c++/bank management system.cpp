@@ -46,7 +46,6 @@ public:
         cout << "Account Holder Name ";
     };
 };
-
 int main() {
     // Object Bank_Account class ------>
     Bank_Account account("Md.Pranto Islam", 99999999);
