@@ -59,6 +59,5 @@ int main() {
     account.displayAccountDetails();
     // Destructor call
     account.~Bank_Account();
-
     return 0;
-}
+};
