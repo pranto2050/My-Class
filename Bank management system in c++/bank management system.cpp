@@ -1,6 +1,7 @@
 /*
 
-Using Class, Class name is “Bank_Account” and two attribute 
+Using Class, Class name is “Bank_Account” and two attribute
+ 
 1. String account holder Name.
 2. Account Balance
 
