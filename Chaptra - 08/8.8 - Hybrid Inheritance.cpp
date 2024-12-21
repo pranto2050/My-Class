@@ -19,7 +19,9 @@ class Employee : public Person {
 protected:
     int employeeId;
 public:
-    Employee(string name, int id): Person(name), employeeId(id){};
+    Employee(string name, int id): Person(name){ // employeeId(id) or employeeId = id;
+        employeeId = id;
+    };
     void displayEmployee(){
         display();
         cout << "Employee ID: " << employeeId << endl;
@@ -31,7 +33,7 @@ class Student : public Person {
 protected:
     int studentId;
 public:
-    Student(string name, int id) : Person(name), studentId(id){};
+    Student(string name, int id) : Person(name),studentId(id){} // studentId = id; or ,studentId(id)
     void displayStudent(){
         display();
         cout << "Student ID: " << studentId << endl;

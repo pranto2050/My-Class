@@ -5,23 +5,31 @@
 using namespace std; 
 //superclass A 
 class A{ 
+    protected:
+    int a = 10;
 public: 
     void show_A() { 
-	    cout<<"class A"<<endl; 
+	    cout<<"class A: " << a <<endl; 
     };
 }; 
 //subclass B of A
 class B : public A{ 
+    int b = 20;
 public: 
+    //Overriding show_A() method from superclass A
+    int sum = a + b;
     void show_B() { 
-	    cout<<"class B"<<endl; 
+	    cout<<"class B: " << sum <<endl; 
     };
 }; 
 //subclass C of A
 class C : public A{ 
+    int c = 30;
 public: 
+int total = a + c;
     void show_C() { 
-	    cout<<"class C"<<endl; 
+int total = a + c;
+	    cout<<"class C: "  << total << endl; 
     };
 }; 
 // Main function
