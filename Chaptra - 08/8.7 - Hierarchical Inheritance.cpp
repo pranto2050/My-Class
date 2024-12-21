@@ -30,7 +30,6 @@ int main() {
     cout<<"calling from B: "<<endl; 
     b.show_B(); 
     b.show_A(); 
-	
     C c; // c is object of class C 
     cout<<"calling from C: "<<endl; 
     c.show_C(); 

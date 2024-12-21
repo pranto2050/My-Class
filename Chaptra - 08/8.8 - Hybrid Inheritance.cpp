@@ -14,7 +14,6 @@ public:
         cout << "Name: " << name << endl; 
     };
 };
-
 // Derived class 1: Employee (Single Inheritance)
 class Employee : public Person {
 protected:
@@ -27,12 +26,10 @@ public:
         cout << "Method inside Derived Class Employee"<< endl;
     };
 };
-
 // Derived class 2: Student (Single Inheritance)
 class Student : public Person {
 protected:
     int studentId;
-
 public:
     Student(string name, int id) : Person(name), studentId(id){};
     void displayStudent(){
@@ -41,7 +38,6 @@ public:
         cout << "Method inside Derived Class Student"<< endl;
     };
 };
-
 // Derived class 3: StudentIntern (Multiple Inheritance)
 class StudentIntern : public Employee, public Student {
 public:
