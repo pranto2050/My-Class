@@ -1,5 +1,4 @@
 
-
 // C++ program to illustrate the hybrid inheritance
 #include <iostream>
 using namespace std;
