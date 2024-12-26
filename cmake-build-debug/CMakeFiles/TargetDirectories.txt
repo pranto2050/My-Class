@@ -1,0 +1,3 @@
+/Users/md.prantoislam/Desktop/My-Class/cmake-build-debug/CMakeFiles/My_Class.dir
+/Users/md.prantoislam/Desktop/My-Class/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/md.prantoislam/Desktop/My-Class/cmake-build-debug/CMakeFiles/rebuild_cache.dir
