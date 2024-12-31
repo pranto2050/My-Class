@@ -19,4 +19,15 @@ int main() {
     student_one.set(1, "Rahul");
     student_one.get();
     return 0;
+    int roll;
+    string name;
+    cout << "Enter roll number: ";
+    cin >> roll;
+    cout << "Enter name: ";
+    cin >> name;
+    
+    students student_two;
+    student_two.set(roll, name);
+    student_two.get();
+    return 0;
 }

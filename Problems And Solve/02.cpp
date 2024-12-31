@@ -17,7 +17,6 @@ public:
     Circle(double i){
         radius = i;
     };
-
     void display(){
         double result = 2 * 3.1416 * radius;
         cout << "circumference of the circle: " << result << endl;
