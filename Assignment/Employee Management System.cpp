@@ -22,21 +22,16 @@ public:
         cout << "Base Salary: " << baseSalary << endl;
     }
 };
-
-
-class Manager : public Employee
-{
+class Manager : public Employee{
 private:
     double bonus;
-
 public:
     Manager(string n, int id, double salary, double b) : Employee(n, id, salary){
         bonus = b;
     }
-
     double calculate_salary() override{
         return baseSalary + bonus;
-    }
+    };
     void displayInfo() override {
         cout << "Employee Information (Manager Section):" << endl;
         Employee::displayInfo();
@@ -44,7 +39,6 @@ public:
         cout << "Total Compensation: " << calculate_salary() << endl;
     }
 };
-
 class Developer : public Employee{
 private:
     int experienceLevel;
@@ -62,7 +56,6 @@ public:
         cout << "Total: " << calculate_salary() << endl;
     }
 };
-
 class Salesperson : public Employee{
 private:
     double salesAmount;
@@ -89,7 +82,6 @@ int main(){
     employees[0] = &manager;
     employees[1] = &developer;
     employees[2] = &salesperson;
-
     employees[0]->displayInfo();
     cout << endl;
     employees[1]->displayInfo();
