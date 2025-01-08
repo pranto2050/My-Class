@@ -28,13 +28,11 @@ class Electronics : public Product
 {
     int warrenty_period;
 public:
-    Electronics(string n, double p, int wp): Product( n,p)
-    {
+    Electronics(string n, double p, int wp): Product( n,p){
         warrenty_period=wp;
-    }
+    };
 
-    void calculate_discount()
-    {
+    void calculate_discount(){
         if (price>5000)
         {
             total_bill=price-price*10/100;
@@ -46,8 +44,7 @@ public:
           cout<<"After  10% Discount Total Price="<<total_bill<<endl<<endl;
     }
 
-    void show_details()
-    {
+    void show_details(){
         cout<<"For Electronics:"<<endl;
         Product :: show_details();
         cout<<"Warrenty Days:"<<warrenty_period<<endl;
@@ -63,44 +60,35 @@ public:
         Size=sz;
     }
 
-    void calculate_discount()
-    {
-        if (price>4000)
-        {
+    void calculate_discount(){
+        if (price>4000){
             total_bill=price-price*20/100;
         }
-        else
-        {
+        else{
             total_bill=price;
         }
          cout<<"After 20% Discount Total Price="<<total_bill<<endl<<endl;
     }
 
-      void show_details()
-    {
+      void show_details(){
         cout<<"For Clothing:"<<endl;
         Product :: show_details();
         cout<<"Size of the cloth:"<<Size<<endl;
     }
 };
 
-class Books : public Product
-{
+class Books : public Product{
     string author;
 public:
-    Books(string n, double p, string a): Product( n, p)
-    {
+    Books(string n, double p, string a): Product( n, p){
         author=a;
     }
 
-    void calculate_discount()
-    {
-        if (price>300)
-        {
+    void calculate_discount(){
+        if (price>300){
             total_bill=price-price*15/100;
         }
-        else
-        {
+        else{
             total_bill=price;
         }
          cout<<"After 15% Discount Total Price="<<total_bill<<endl;
