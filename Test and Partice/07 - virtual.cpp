@@ -109,4 +109,4 @@ int main(){
     q[2]->show_details();
     q[2]->calculate_discount();
 
-}
+};

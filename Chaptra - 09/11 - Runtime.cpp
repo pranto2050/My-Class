@@ -15,17 +15,18 @@ class Product {
 };
 
 class Electronics : public Product {
+    protected:
     int warranty;
+    double pricess;
     public:
         Electronics(string n, double p, int w): Product(n, p){
             warranty = w;
-            if (price > 5000){
-                price = price * 0.80; // Apply 20% discount
-            };
+            pricess = p;
         };
         void discount() override {
-            if (price > 5000){
-                price = price * 0.80; // Apply 20% discount
+            if (pricess > 5000){
+                pricess = pricess * 0.80;
+                price = pricess; // Apply 20% discount
             }
         }
         void display() override {
@@ -34,19 +35,18 @@ class Electronics : public Product {
             cout << "Warranty: " << warranty << endl;
         }   
 };
-
-
 class Clothing : public Product {
+    protected:
     string size;
     double pricess;
     public:
     Clothing(string n, double p, string s): Product(n, p){
             size = s;
+            pricess = p;
         };
         void discount () override {
-            if(price > 3000){
-                pricess  =   price*(25/100);
-                price = price - pricess;
+            if(pricess > 3000){
+                price = pricess * 0.90; // Apply 10% discount
             }
         };
         void display () override {
@@ -59,8 +59,12 @@ class Clothing : public Product {
 int main() {
     Electronics c("Router", 6000, 2);
     c.display();
+    c.discount();
+    c.display();
     cout << endl;
     Clothing a("Jacket",5000,"M");
+    a.display();
+    a.discount();
     a.display();
     return 0;
 }
