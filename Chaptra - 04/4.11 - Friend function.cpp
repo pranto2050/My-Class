@@ -12,7 +12,6 @@ class students{
     public: // Access specifier
     friend void result (students); // Friend function
 };
-
 void result(students total){ // Function definition
     int result = total.subject_one + total.subject_two; // Add two subject marks
     cout << result << endl; // Print the result
