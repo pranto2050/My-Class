@@ -4,7 +4,6 @@
 
 #include <iostream>
 using namespace std;
-
 class test{
     private:
         int a;
@@ -21,13 +20,8 @@ class test{
 };
 
 int main() {
-
 test t1;
 --t1;
 t1.display();
-
-
-
-    
     return 0;
 }
