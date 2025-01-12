@@ -7,7 +7,6 @@
 extern "C" {
 #include "user_interface.h"
 }
-
 typedef struct {
   String ssid;
   uint8_t ch;
