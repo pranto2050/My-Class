@@ -16,8 +16,6 @@ class Memory{
         cout << "x = " << x << endl;
         cout << "y = " << y << endl;
     };
-
-
 };
 int main() {
     Memory *obj = new Memory;
